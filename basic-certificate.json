@@ -1,0 +1,54 @@
+{
+      "id": "BASIC_001",
+      "lastUpdate": "8/7/2023",
+      "templateDetails": {
+        "template_name": "Basic Credential",
+        "description": "This template serves as a foundational credential, capturing essential information about the credential holder.",
+        "attributes": [
+          {
+            "title": "Subject ID",
+            "type": "string",
+            "description":"A unique identifier of the recipient. Example: DID, email address, national ID number, employee ID, student ID etc. If you enter the recipient's DID, the person will automatically receive the credential in their Flyhigh wallet.",
+            "required": true
+          },
+          {
+            "title": "Subject Name",
+            "type": "string",
+            "description":"The name of the credential holder.",
+            "required": true
+          },
+          {
+            "title": "Mobile Number",
+            "type": "number",
+            "required": false
+          },
+          {
+            "title": "Issue Date",
+            "type": "date",
+            "required": true
+          },
+          {
+            "title": "Expiration Date",
+            "type": "date",
+            "required": false
+          },
+          {
+            "title": "address",
+            "type": "object",
+            "required": false,
+            "properties": [
+              {
+                "title": "Country",
+                "type": "string",
+                "required": false
+              },
+              {
+                "title": "State",
+                "type": "string",
+                "required": false
+              }
+            ]
+          }
+        ]
+      }
+    }
